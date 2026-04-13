@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+  <!-- FIXED CSS -->
+  <link rel="stylesheet" href="Weather.css" />
+
+  <title>My Weather Web</title>
+</head>
+
+<body>
+
+<div class="weather-app">
+  <header>
+    <form class="search-form">
+      <input type="search" placeholder="Enter a city.." required class="search-input"/>
+      <input type="submit" value="Search" class="search-button"/>
+    </form>
+  </header>
+
+  <main>
+    <div class="current-weather">
+      <div>
+        <h1 class="current-city">Paris</h1>
+
+        <p class="current-details">
+          <span id="current-date"></span>,
+          <span id="weather-description">moderate rain</span><br/>
+          Humidity: <strong id="humidity">87%</strong>,
+          Wind: <strong id="wind">7.2km/h</strong>
+        </p>
+      </div>
+
+      <div class="current-temperature">
+        <span class="current-temperature-icon">☀️</span>
+        <span class="current-temperature-value" id="temperature">24</span>
+        <span class="current-temperature-unit">°C</span>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- FIXED JS -->
+<script src="Weather.js" defer></script>
+
+</body>
+</html>
